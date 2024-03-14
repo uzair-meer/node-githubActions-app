@@ -22,7 +22,9 @@ app.get('/products', (req, res) =>{
     ])
 })
 
-
+app.get('/about', (req, res) =>{
+    res.send(`<h3>hi from about page</h3>`)
+})
 app.listen(PORT, () =>{
     console.log('lisitnineif on port 5001')
 })
